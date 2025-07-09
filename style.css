@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "Yekan-Bakh";
+    src: url(/assets//yekanbakh/YekanBakhNoEn-Regular.woff) format(woff);
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+
+main form{
+    font-family: "Yekan-Bakh";
+    display: flex;
+    flex-direction: column;
+    margin-top: 300px;
+    align-items: right;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 250px;
+    width: 350px;
+}
+
+
+label{
+    
+    margin-top: 10px;
+    margin-right: 40px;
+    
+
+}
+
+input{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    width: 250px;
+    height: 40px;
+    margin-right: 40px;
+}
+
+input.submit{
+    font-family: "Yekan-Bakh";
+    color: white;
+    width: 250px;
+    margin-top: 20px;
+    background-color: green;
+    
+}
