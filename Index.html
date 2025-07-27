@@ -10,14 +10,17 @@
 </head>
 <body>
     <main>
-
-        <form action="">
+        <input type="checkbox" id="switch" /><label class="switch" for="switch">Toggle</label>
+        <form action="" id="login_form">
+            <div class="alert">
+                <!-- <p>صفحه لاگین</p> -->
+            </div>
             <label for="username" class="input">نام کاربری</label>
             <input type="text" class="input" name="username" id="username">
-            <label for="password">رمز عبور</label>
+            <label for="password" class="password">رمز عبور</label>
             <input type="password" class="password" name="password" id="password">
             <!-- <input typ="submit" class="submit" value="ورود" > -->
-            <button type="submit" class="submit">ورود
+            <button type="submit" id="submit" class="submit">ورود
                 <i class="fas fa-sync fa-spin loading"></i>
             </button>
             <section class="SocialMedia">

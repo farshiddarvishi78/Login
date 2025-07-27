@@ -30,14 +30,44 @@ jQuery(document).ready(function(){
         
     // });
 
-    jQuery('.submit').click(function(e){
+    // jQuery('.submit').click(function(e){
+    //     e.preventDefault();
+    //     jQuery('.loading').fadeIn(2000);
+    // })
+
+
+    jQuery('.SocialMedia').click(function(e){
         e.preventDefault();
-        jQuery('.loading').fadeIn(2000);
-    })
-
-
-    jQuery('.SocialMedia').click(function(){
         jQuery('.icons').slideToggle();
     });
 
+
+    jQuery('.submit').click(function(e){
+        e.preventDefault();
+        // let title = $('#username').val();
+        // let pass = $('#password').val();
+        // console.log(title);
+        // console.log(pass);
+        //$('.alert').html('<strong> متن آزمایشی! </strong>');
+        //$('#username').val('girgargor');
+        let username = $('#username').val();
+        let pass = $('#password').val();
+      
+
+
+
+        
+    });
+
+});
+
+
+jQuery(document).ready(function(){
+    jQuery('#switch').change(function(){
+        if(this.checked){
+            jQuery('body').addClass('night');
+        }else{
+            jQuery('body').removeClass('night');
+        }
+    });
 });

@@ -3,30 +3,58 @@
     src: url(/assets//yekanbakh/YekanBakhNoEn-Regular.woff) format(woff);
 }
 
+div.alert{
+
+    background-color: rgb(248, 173, 33);
+    text-align: center;
+}
+
 
 main{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+body{
+    background-color: #f7f2f2;
+}
+
+.night{
+    background-color: #111010;
 }
 
 
 main form{
+    background-color: #8a8686;
+    border-radius: 25px;
     font-family: "Yekan-Bakh";
     display: flex;
     flex-direction: column;
-    margin-top: 300px;
+    margin-top: 200px;
     align-items: right;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    height: 360px;
+    height: 420px;
     width: 340px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
 }
 
 
-label{
+label.input {
     
     margin-top: 10px;
     margin-right: 40px;
     
+}
+
+label.password {
+    
+    margin-top: 10px;
+    margin-right: 40px;
 
 }
 
@@ -72,3 +100,47 @@ i.loading{
     font-weight: 600;
     padding: 10px 5px;
 }
+
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label.switch {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 200px;
+	height: 100px;
+	background: rgb(173, 169, 169);
+	display: block;
+	border-radius: 100px;
+	position: relative;
+}
+
+label.switch:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 90px;
+	height: 90px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: #050505;
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 130px;
+}
+
+
