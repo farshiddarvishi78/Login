@@ -25,6 +25,11 @@ body{
     background-color: #111010;
 }
 
+.nightdetails{
+    background-color: #343434;
+    color:#fff;
+}
+
 
 main form{
     background-color: #8a8686;
@@ -59,7 +64,7 @@ label.password {
 }
 
 input{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(70, 58, 58, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: none;
     width: 250px;
     height: 40px;
@@ -131,7 +136,7 @@ label.switch:after {
 }
 
 input:checked + label {
-	background: #050505;
+	background: #363636;
 }
 
 input:checked + label:after {

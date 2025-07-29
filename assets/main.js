@@ -64,10 +64,49 @@ jQuery(document).ready(function(){
 
 jQuery(document).ready(function(){
     jQuery('#switch').change(function(){
-        if(this.checked){
-            jQuery('body').addClass('night');
-        }else{
-            jQuery('body').removeClass('night');
-        }
+        // if(this.checked){
+        //     jQuery('body').toggleClass('night');
+        //     jQuery('#login_form').css({
+        //     "background":"#343434",
+        //     "color":"#fff"
+        // })
+        // }else{
+        //     jQuery('body').removeClass('night');
+        // }
+
+        //same codes
+        // jQuery('body').toggleClass('night');
+        // jQuery('#login_form').css({
+        //     "background":"#343434",
+        //     "color":"#fff"
+        // })
+
+        jQuery('body').toggleClass('night');
+        jQuery('#login_form').toggleClass('nightdetails');
     });
 });
+
+
+jQuery(document).ready(function(){
+    jQuery('#switch').change(function(){
+        // localStorage.setItem('test','farshid');
+        // let x = localStorage.getItem('test');
+        // console.log(x);
+        // localStorage.clear();
+
+        let data = {
+            "night":"night",
+            "nightdetails":"nightdetails"
+        }
+       
+        // if(this.checked){
+        //     localStorage.setItem("night_mode",JSON.stringify(data));
+        //     jQuery('body').addClass("night");
+        //     jQuery('#login_form').addClass("nightdetails");
+        // }else{
+        //     localStorage.clear("night_mode");
+        // }
+        console.log(JSON.parse());
+
+    });
+})
